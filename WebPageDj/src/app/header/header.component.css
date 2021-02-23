@@ -1,0 +1,48 @@
+.enl{
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(rgba(0, 255, 255, 1) 50%
+  ,rgb(31, 32, 32) 73%);
+  -webkit-background-clip: text;
+  color: transparent;
+  /*color: linear-gradient(180deg, #00FFFF 55.21%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(180deg, #000000 97.4%, rgba(10, 9, 9, 0.765625) 99.99%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(0deg, #2B2B2B, #2B2B2B);*/
+}
+
+.nav-item :first-child{
+  margin-right: 12px;
+}
+
+.navbar .navbar-toggler span{
+  color: white;
+}
+
+#toggler{
+  margin-right: 50%;
+}
+
+.navbar .collapse .navbar-nav .nav-item #live{
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(rgba(255, 0, 0, 1)
+  50% ,rgba(0, 0, 0, 1) 83%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navbar{
+  background: linear-gradient(rgba(9, 27, 194, 1)-90%,rgb(0, 0, 0)130%);
+}
+
+
