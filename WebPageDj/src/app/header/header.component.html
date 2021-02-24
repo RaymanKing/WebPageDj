@@ -9,13 +9,8 @@
         <a class="nav-link enl" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link enl" href="#">Biblioteca</a>
+        <a class="nav-link enl" [routerLink]="['playlist']">Biblioteca</a>
       </li>
-      <!--
-      <li class="nav-item">
-        <a class="nav-link enl" href="#">Me</a>
-      </li>
-      -->
       <li class="nav-item">
         <a class="nav-link enl" href="#">Foro</a>
       </li>
@@ -28,14 +23,4 @@
     </ul>
   </div>
 </nav>
-<!--
-<div class="row">
-  <div class="col"><a class="navbar-brand" href="#"><img src="assets/Icono.png"></a></div>
-  <div class="col"><a class="nav-link enl" href="#">Home</a></div>
-  <div class="col"><a class="nav-link enl" href="#">Biblioteca</a></div>
-  <div class="col"><a class="nav-link enl" href="#">Quién soy</a></div>
-  <div class="col"><a class="nav-link enl" href="#">Foro</a></div>
-  <div class="col"><a class="nav-link" href="#"><span id="live">Live</span></a></div>
-  <div class="col"><a class="nav-link enl" href="#">Contáctame</a></div>
-</div>
--->
+<router-outlet></router-outlet>

@@ -1,4 +1,11 @@
 body{
   background-image: url('assets/home.png');
   background-size: cover;
+  background-repeat: repeat;
+
+  height: 1024px;
+}
+
+*{
+  font-family: Roboto;
 }
