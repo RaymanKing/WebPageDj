@@ -1,8 +1,9 @@
 #fondo{
   border-top: black solid 2px;
-  background-image: url('../../assets/biblioteca.jpg');
+  background-image: url('../../assets/foro.png');
   background-size: cover;
   background-repeat: repeat;
+  background-color: rgba(16, 16, 104, 0.74);
 
   height: 1024px;
 }
