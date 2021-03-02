@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+.footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.footer p, img{
+  display: inline;
+}
+
+p{
+  font-family: Ribeye;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+}
+
+.footer img{
+  margin-left: 1%;
+}
+
+@media only screen and (max-width:375px){
+  .footer img{
+    display: list-item;
+    margin: auto;
+    margin-top: 5%;
+  }
+}

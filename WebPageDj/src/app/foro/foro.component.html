@@ -1,4 +1,12 @@
 <div id="fondo">
-
+  <div *ngIf="this.usuario == '';else loggein" class="cabecera">
+    <button>Iniciar sesión</button>
+    <button>Registrarse</button>
+  </div>
+  <ng-template #loggein>
+    <button class="desconect" (click)="disconect()">Desconectar</button>
+  </ng-template>
+  <h1>Foro</h1>
 </div>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

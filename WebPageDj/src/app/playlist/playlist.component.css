@@ -6,3 +6,15 @@
 
   height: 1024px;
 }
+
+.lista{
+  font-family: Ribeye;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 5%;
+}
