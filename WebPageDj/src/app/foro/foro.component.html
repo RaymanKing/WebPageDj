@@ -7,6 +7,14 @@
     <button class="desconect" (click)="disconect()">Desconectar</button>
   </ng-template>
   <h1>Foro</h1>
+  <h2>Comparte tu música con nosotros</h2>
+  <div class="comentario" *ngIf="this.usuario != ''">
+    <input type="text" id="titulo-comentario" placeholder="Introduce descripción...">
+    <div>
+      <img class="subida-media" src="../../assets/iconos/subida.svg">
+      <img class="subida-comentario" src="../../assets/iconos/subir_comentario.png">
+    </div>
+  </div>
 </div>
 <app-footer></app-footer>
 <router-outlet></router-outlet>

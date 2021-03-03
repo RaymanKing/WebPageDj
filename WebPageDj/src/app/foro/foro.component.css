@@ -16,6 +16,64 @@ h1{
   color: rgba(170, 170, 170, 1);
 }
 
+h2{
+  font-family: Ribeye;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 50px;
+  color: rgba(170, 170, 170, 1);
+}
+
+.comentario{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: black 2px solid;
+  background-color: #aaaaaa7c;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+.comentario p{
+  text-align: center;
+}
+
+.subida-media{
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  transition: all 0.4s;
+}
+
+.subida-media:hover{
+  transform: scale(1.07, 1.07);
+}
+
+.subida-comentario{
+  float: right;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  transition: all 0.4s;
+}
+
+.subida-comentario:hover{
+  transform: scale(1.07, 1.07);
+}
+
+#titulo-comentario{
+  text-align: center;
+  float: none;
+  margin: auto;
+  font-family: Ribeye;
+  color: rgba(0, 0, 0, 0.671);
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 96%;
+  /*padding-left: 36%;
+  padding-right: 36%;*/
+  font-size: 180%;
+}
+
 .cabecera button{
   display: inline;
 }
@@ -50,4 +108,11 @@ button{
 .desconect{
   float: right;
   margin-top: 1%;
+}
+
+
+@media only screen and (max-width:375px){
+  .comentario{
+    margin: auto;
+  }
 }

@@ -10,6 +10,7 @@ import { ForoComponent } from './foro/foro.component';
 import { LiveComponent } from './live/live.component';
 import { ContactaComponent } from './contacta/contacta.component';
 import { FooterComponent } from './footer/footer.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     ForoComponent,
     LiveComponent,
     ContactaComponent,
-    FooterComponent
+    FooterComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
