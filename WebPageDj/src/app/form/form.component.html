@@ -1,0 +1,23 @@
+<div class="contain">
+  <div class="form">
+    <ul>
+      <li>Nombre</li>
+      <li><input type="text" id="nombre" [(ngModel)]="nombre"></li>
+      <li>Correo</li>
+      <li><input type="email" id="email" [(ngModel)]="correo"></li>
+      <li>Asunto</li>
+      <li><input type="text" id="asunto" [(ngModel)]="asunto"></li>
+      <li>Mensaje</li>
+      <li><input type="text" id="titulo-comentario" [(ngModel)]="mensaje"></li>
+      <li><button type="submit" (click)="enviarEmail()">Enviar</button></li>
+    </ul>
+  </div>
+  <div class="perfil">
+    <ul>
+      <li>Enrique</li>
+      <li>Rapela Castejón</li>
+      <li><img src="../../assets/mee.jpeg" id="mee"></li>
+      <li class="redes"><img (click)="goRed(1)" src="../../assets/iconos/instagram.svg"><img (click)="goRed(2)" src="../../assets/iconos/soundcloud.svg"><img (click)="goRed(3)" src="../../assets/iconos/youtube.svg"></li>
+    </ul>
+  </div>
+</div>

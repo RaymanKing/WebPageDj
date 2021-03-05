@@ -10,7 +10,8 @@ import { ForoComponent } from './foro/foro.component';
 import { LiveComponent } from './live/live.component';
 import { ContactaComponent } from './contacta/contacta.component';
 import { FooterComponent } from './footer/footer.component';
-import { PostComponent } from './post/post.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { PostComponent } from './post/post.component';
     LiveComponent,
     ContactaComponent,
     FooterComponent,
-    PostComponent
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    app_routing
+    app_routing,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

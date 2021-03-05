@@ -23,6 +23,14 @@ p{
   margin-left: 1%;
 }
 
+.footer img{
+  transition: all 0.4s;
+}
+
+.footer img:hover{
+  transform: scale(1.07, 1.07);
+}
+
 @media only screen and (max-width:375px){
   .footer img{
     display: list-item;

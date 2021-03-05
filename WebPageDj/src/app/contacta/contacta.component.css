@@ -1,8 +1,9 @@
 #fondo{
   border-top: black solid 2px;
-  background-image: url('../../assets/contactame.jpg');
+  background-image: url('../../assets/contacta.jpg');
   background-size: cover;
   background-repeat: repeat;
 
   height: 1024px;
+
 }
