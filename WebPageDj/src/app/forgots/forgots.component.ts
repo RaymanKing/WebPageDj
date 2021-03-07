@@ -12,4 +12,6 @@ export class ForgotsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
 }

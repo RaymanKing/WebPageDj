@@ -18,6 +18,7 @@ import { RegistersComponent } from './registers/registers.component';
 import { LoginComponent } from './login/login.component';
 import { UploadsComponent } from './uploads/uploads.component';
 import { ForgotsComponent } from './forgots/forgots.component';
+import { YoutubePipe } from './youtube.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ForgotsComponent } from './forgots/forgots.component';
     RegistersComponent,
     LoginComponent,
     UploadsComponent,
-    ForgotsComponent
+    ForgotsComponent,
+    YoutubePipe
   ],
   imports: [
     BrowserModule,

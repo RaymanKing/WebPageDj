@@ -3,11 +3,11 @@
     <h1>Inicio de sesión</h1>
     <ul>
       <li>Correo</li>
-      <li><input type="email" id="email"></li>
+      <li><input type="email" id="email" [(ngModel)]="email"></li>
       <li>Contraseña</li>
-      <li><input type="password" id="password"></li>
+      <li><input type="password" id="password" [(ngModel)]="password"></li>
       <li><a [routerLink]="['../../foro/forgots']" id="log">¿Olvidaste la contraseña? Pincha aquí</a></li>
-      <li><button type="submit">Enviar</button></li>
+      <li><button type="submit" (click)="login()">Enviar</button></li>
     </ul>
   </div>
 </div>

@@ -9,12 +9,45 @@
   <h1>Foro</h1>
   <h2>Comparte tu música con nosotros</h2>
   <div class="comentario" *ngIf="this.usuario != ''">
-    <input type="text" id="titulo-comentario" placeholder="Introduce descripción...">
+    <input type="text" id="titulo-comentario" placeholder="Introduce descripción..." [(ngModel)]="comentario">
     <div>
-      <img class="subida-media" src="../../assets/iconos/subida.svg">
-      <img class="subida-comentario" src="../../assets/iconos/subir_comentario.png">
+      <img class="subida-media" src="../../assets/iconos/subida.svg" (click)="open(content)">
+      <img class="subida-comentario" src="../../assets/iconos/subir_comentario.png" (click)="post()">
+    </div>
+  </div>
+  <div class="posted" *ngIf='posts.length != 0'>
+    <div class="posts" *ngFor="let post of postsList">
+      <p class="com" id="us">{{post.user}}</p>
+      <p class="com">{{post.comentario}}</p>
+      <div class="yt" *ngIf="post.type == 1">
+        <iframe width="560" height="315" [src]="post.url | youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="yt" *ngIf="post.type == 2">
+        <h1>In development!</h1>
+      </div>
+      <div class="delete" *ngIf="''+post.idUser == logged">
+        <img src="../../assets/delete.png" (click)="deletePost(post)">
+      </div>
     </div>
   </div>
 </div>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/RHUKLQ6nWpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+<!-- Modal upload URL track -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Sube tu track</h4>
+  </div>
+  <div class="modal-body">
+    <div class="uri">
+      <h4>Introduce la URL</h4>
+      <input type="text" [(ngModel)]="url">
+    </div>
+    <div class="plataforma">
+      <img src="../../assets/iconos/youtube.svg" aria-label="Close" (click)="modal.dismiss('Cross click')" (click)='platform(1)'>
+      <img src="../../assets/iconos/soundcloud.svg" aria-label="Close" (click)="modal.dismiss('Cross click')" (click)='platform(2)'>
+    </div>
+  </div>
+</ng-template>
 <app-footer></app-footer>
 <router-outlet></router-outlet>

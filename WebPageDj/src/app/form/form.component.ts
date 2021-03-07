@@ -18,10 +18,6 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enviarEmail(){
-
-  }
-
   goRed(num : number){
     if(num == 1){
       window.open('https://www.instagram.com/dj_raaymaan/', '_blank');

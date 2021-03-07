@@ -4,8 +4,9 @@
   background-size: cover;
   background-repeat: repeat;
   background-color: rgba(16, 16, 104, 0.911);
+  background-attachment: fixed;
 
-  height: 1024px;
+  padding-bottom: 6%;
 }
 
 h1{
@@ -32,6 +33,17 @@ h2{
   background-color: #aaaaaa7c;
   margin-left: 17%;
   margin-right: 17%;
+}
+
+.posts{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: black 2px solid;
+  background-color: #aaaaaa7c;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 3%;
 }
 
 .comentario p{
@@ -110,9 +122,76 @@ button{
   margin-top: 1%;
 }
 
+.modal-body img{
+  width: 40%;
+}
+
+.modal-body img{
+  transition: all 0.4s;
+}
+
+.modal-body img:hover{
+  transform: scale(1.07, 1.07);
+}
+
+.modal-body img:first-child{
+  margin: 5%;
+}
+
+.modal-body{
+  text-align: center;
+}
+
+.modal-header .modal-title{
+  margin-left: 35%;
+}
+
+.uri{
+  margin-bottom: 10%;
+}
+
+.delete{
+  text-align: center;
+}
+
+.delete img{
+  transition: all 0.4s;
+}
+
+.delete img:hover{
+  transform: scale(1.07, 1.07);
+}
+
+.delete img{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 10%;
+}
+
+.com{
+  font-size: 180%;
+  color: white;
+  font-family: Ribeye;
+  text-align: center;
+  color: rgba(170, 170, 170, 1);
+  text-shadow: black 2px 2px 2px;
+}
+
+#us{
+  font-size: 220%;
+  color: black;
+  text-shadow: white 2px 2px 2px;
+}
+
+.yt{
+  text-align: center;
+}
 
 @media only screen and (max-width:375px){
   .comentario{
+    margin: auto;
+  }
+  .posts{
     margin: auto;
   }
 }
