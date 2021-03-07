@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+  firebase: {
     apiKey: 'AIzaSyDKh_sYo1YYI1kO_gCcrNDCxLm6_6g3yQI',
     authDomain: 'api-dj-web.firebaseapp.com',
     databaseURL: 'https://api-dj-web-default-rtdb.europe-west1.firebasedatabase.app',

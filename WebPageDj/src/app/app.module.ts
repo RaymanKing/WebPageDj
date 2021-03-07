@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { environment } from '../environments/environment';
 import { app_routing } from "./app.routes";
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,9 +12,12 @@ import { LiveComponent } from './live/live.component';
 import { ContactaComponent } from './contacta/contacta.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormComponent } from './form/form.component';
-import { FormsModule } from '@angular/forms';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { RegistersComponent } from './registers/registers.component';
+import { LoginComponent } from './login/login.component';
+import { UploadsComponent } from './uploads/uploads.component';
+import { ForgotsComponent } from './forgots/forgots.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +29,18 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     LiveComponent,
     ContactaComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    RegistersComponent,
+    LoginComponent,
+    UploadsComponent,
+    ForgotsComponent
   ],
   imports: [
     BrowserModule,
     app_routing,
     FormsModule,
-    AngularFireAuthModule,
-    AngularFireDatabaseModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

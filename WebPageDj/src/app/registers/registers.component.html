@@ -1,0 +1,19 @@
+<div id="fondo">
+  <div class="form">
+    <h1>Formulario de registro</h1>
+    <ul>
+      <li>Nombre</li>
+      <li><input type="text" id="nombre" [(ngModel)]="nombre"></li>
+      <li>Correo</li>
+      <li><input type="email" id="email" [(ngModel)]="email"></li>
+      <li>Contraseña</li>
+      <li><input type="password" id="password" [(ngModel)]="password"></li>
+      <li>Confirmar contraseña</li>
+      <li><input type="password" id="confpassword" [(ngModel)]="confpassword"></li>
+      <li><a [routerLink]="['../../foro/login']" id="log">¿Tienes cuenta? Inicia sesión</a></li>
+      <li><button type="submit" (click)="registrar()">Enviar</button></li>
+    </ul>
+  </div>
+</div>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

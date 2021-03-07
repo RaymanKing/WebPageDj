@@ -1,7 +1,7 @@
 <div id="fondo">
   <div *ngIf="this.usuario == '';else loggein" class="cabecera">
-    <button>Iniciar sesión</button>
-    <button>Registrarse</button>
+    <button [routerLink]="['login']">Iniciar sesión</button>
+    <button [routerLink]="['registers']">Registrarse</button>
   </div>
   <ng-template #loggein>
     <button class="desconect" (click)="disconect()">Desconectar</button>

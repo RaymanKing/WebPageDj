@@ -1,0 +1,53 @@
+*{
+  font-family: Ribeye;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  text-shadow: black 2px 2px 2px;
+}
+
+#log{
+  font-size: 30px;
+}
+
+#fondo{
+  border-top: black solid 2px;
+  background-image: url('../../assets/foro.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(16, 16, 104, 0.911);
+
+  height: 1024px;
+}
+
+.form{
+  text-align: center;
+  margin-top: 3%;
+}
+
+.form ul{
+  list-style-type: none;
+}
+
+.form ul li{
+  margin-top: 1%;
+}
+
+.form ul input{
+  color: black;
+}
+
+button{
+  margin-top: 3%;
+  color: black;
+  transition: all 0.4s;
+}
+
+button:hover{
+  transform: scale(1.07, 1.07);
+}
+
