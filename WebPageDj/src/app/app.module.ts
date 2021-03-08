@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { UploadsComponent } from './uploads/uploads.component';
 import { ForgotsComponent } from './forgots/forgots.component';
 import { YoutubePipe } from './youtube.pipe';
+import { TracksPipe } from './tracks.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { YoutubePipe } from './youtube.pipe';
     LoginComponent,
     UploadsComponent,
     ForgotsComponent,
-    YoutubePipe
+    YoutubePipe,
+    TracksPipe
   ],
   imports: [
     BrowserModule,

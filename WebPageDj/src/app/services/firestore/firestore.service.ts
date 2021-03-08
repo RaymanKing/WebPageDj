@@ -13,6 +13,12 @@ export class FirestoreService {
     private firestore: AngularFirestore
   ) {}
 
+  //Recoger canciones
+  public getTracks() {
+    //return this.firestore.collection('posts', ref => ref.orderBy('date','desc'));
+    return this.firestore.collection('tracks').snapshotChanges();
+  }
+
 
   //Crea un nuevo usuario
   public createUser(data: {nombre: string, email: string, password : string}) {

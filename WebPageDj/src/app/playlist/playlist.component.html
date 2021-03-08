@@ -1,5 +1,12 @@
 <div id="fondo">
   <p class="lista">Lista de RaaYmaan</p>
+  <div class="tracks">
+    <ul>
+      <li *ngFor="let track of urlLists">
+        <iframe width="250%" height="120" [src]="track | tracks " frameborder="0" ></iframe>
+      </li>
+    </ul>
+  </div>
 </div>
 <app-footer></app-footer>
 <router-outlet></router-outlet>
